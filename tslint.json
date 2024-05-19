@@ -1,0 +1,15 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-console" : {
+            "severity" :"warning",
+            "options" : ["debug", "info", "log", "time"]
+        },
+        "semicolon" :[true, "always"]
+    },
+    "rulesDirectory": []
+}
