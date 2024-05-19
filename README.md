@@ -86,3 +86,6 @@
     Keep-Alive: timeout=5
 
     {"status":"OK","message":"Data berhasil Dihapus!"}
+
+# ERD (Entity Relationship Diagram)
+![ERD](./ERD.png)
