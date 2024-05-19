@@ -55,7 +55,7 @@
 
     curl -i -H "Accept: application/json" -X PUT -F "image=/@C:/Users/User/Downloads/Toyota Camry.webp" -F "name=Toyota" http://localhost:3000/cars/2
 
-###Response
+### Response
    
     HTTP/1.1 200 OK
     X-Powered-By: Express
