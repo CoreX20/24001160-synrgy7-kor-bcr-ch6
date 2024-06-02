@@ -1,4 +1,4 @@
-# Challenge 5
+# Challenge 6
 ## Install
     npm install
 ## Migrations
@@ -9,6 +9,15 @@
     npm run dev
 
 # REST API
+## Open API Documentation
+`http://localhost:3000/api-docs`
+
+    1. Click on the "Authorize" button in the Swagger UI.
+    2. Enter <your_jwt_token> in the input field.
+    3. Click "Authorize".
+### Superadmin
+    email: superadmin@mail.com
+    password : 123456
 ## Get list of Cars
 ### Request
 `GET /cars/`
