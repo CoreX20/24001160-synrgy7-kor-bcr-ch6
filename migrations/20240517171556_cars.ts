@@ -7,10 +7,15 @@ export async function up(knex: Knex): Promise<void> {
         table.string("name",255).notNullable();
         table.integer("price").notNullable();
         table.string("image").notNullable();
+        table.boolean("available").notNullable();
         table.string("start_rent").notNullable();
         table.string("finish_rent").notNullable();
+        table.string("created_by").notNullable();
+        table.string("updated_by");
+        table.string("deleted_by");
         table.timestamp("created_at").defaultTo(knex.fn.now());
         table.timestamp("updated_at").defaultTo(knex.fn.now());
+        table.timestamp("deleted_at");
     });
 }
 

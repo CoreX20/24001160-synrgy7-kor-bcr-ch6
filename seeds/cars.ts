@@ -6,8 +6,8 @@ export async function seed(knex: Knex): Promise<void> {
 
     // Inserts seed entries
     await knex("cars").insert([
-        { id: 1, name: "Toyota Camry", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969479/Toyota_Camry_ubrxzx.webp", start_rent: "2024-05-01", finish_rent: "2024-05-10", created_at: new Date(), updated_at: new Date() },
-        { id: 2, name: "Honda Civic", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969551/Honda_Civic_zynbax.jpg", start_rent: "2024-05-05", finish_rent: "2024-05-15", created_at: new Date(), updated_at: new Date() },
-        { id: 3, name: "Ford Mustang", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969609/Ford_Mustang_u4lsov.webp", start_rent: "2024-05-10", finish_rent: "2024-05-20", created_at: new Date(), updated_at: new Date() }
+        { id: 1, name: "Toyota Camry", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969479/Toyota_Camry_ubrxzx.webp", available:true, start_rent: "2024-05-01", finish_rent: "2024-05-10", created_by : "superadmin", created_at: new Date(), updated_at: new Date() },
+        { id: 2, name: "Honda Civic", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969551/Honda_Civic_zynbax.jpg", available:true, start_rent: "2024-05-05", finish_rent: "2024-05-15", created_by : "superadmin", created_at: new Date(), updated_at: new Date() },
+        { id: 3, name: "Ford Mustang", price: 430000, image: "https://res.cloudinary.com/daoqz3rdr/image/upload/v1715969609/Ford_Mustang_u4lsov.webp", available:false, start_rent: "2024-05-10", finish_rent: "2024-05-20", created_by : "admin", created_at: new Date(), updated_at: new Date() }
     ]);
 };
